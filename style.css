@@ -1,0 +1,201 @@
+GENERAL STYLES
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #0073e6, #005bb5);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header h4 {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+header .card ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header .card ul li {
+  margin: 0 15px;
+}
+
+header .card ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .card ul li a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN SECTIONS */
+main section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0073e6;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* SKILLS LIST */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+}
+
+#skills li {
+  list-style: none;
+  background: #0073e6;
+  color: #fff;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+#skills li:hover {
+  background: #005bb5;
+}
+
+/* PROJECTS */
+#projects {
+  text-align: center;
+}
+
+#projects img {
+  max-width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+#projects img:hover {
+  transform: scale(1.05);
+}
+
+#projects figcaption {
+  font-style: italic;
+  color: #555;
+}
+
+/* FOOTER */
+footer {
+  background: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+footer form {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+footer label {
+  font-weight: bold;
+}
+
+footer input[type=text],
+footer input[type=email],
+footer textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+footer input[type=button] {
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+footer input[type=button]:hover {
+  background-color: #005bb5;
+}
+
+footer a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  header .card ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Skill badge animation */
+#skills .badge {
+  transition: transform 0.2s ease-in-out;
+}
+
+#skills .badge:hover {
+  transform: scale(1.1);
+  background-color: #0d6efd;
+  color: white;
+}
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+section, header, footer {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade In Effect */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
